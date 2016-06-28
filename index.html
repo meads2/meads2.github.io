@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MyFriends: Social App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+    <!-- Roboto Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,400' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Ionic Icons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- Navbars Area -->
+    <header>
+        <div class="navbar navbar-primary">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#"><img src="img/nav-logo.svg" alt="brand logo"></a>
+                </div>
+                <div class="searchbar">
+                    <input type="text" placeholder="Search...">
+                    <button type="button" name="button"><i class="ion-android-search"></i></button>
+                </div>
+                <div class="avatar-area">
+                    <div class="toolbar">
+                        <a href="#"><i class="ion-ios-bell"></i></a>
+                        <a href="#"><i class="ion-android-globe"></i></a>
+                        <a href="#"><i class="ion-chatboxes"></i></a>
+                        <a href="#"><i class="ion-android-more-horizontal"></i></a>
+                    </div>
+                    <div class="avatar-img">
+                        <a href="#"><img src="img/nav-avatar.png" alt="avatar-img"></a>
+                    </div>
+                    <p class="greeting">Shane Duncan</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-secondary">
+            <div class="nav-wrapper">
+                <ul class="nav">
+                    <li class="nav-link nav-active"><a href="#"><i class="ion-ios-paper-outline"></i>News Feed</a></li>
+                    <li class="nav-link nav-inactive"><a href="#"><i class="ion-ios-people-outline"></i>Groups</a></li>
+                    <li class="nav-link nav-inactive"><a href="#"><i class="ion-ios-chatboxes-outline"></i>Messges</a></li>
+                    <li class="nav-link nav-inactive"><a href="#"><i class="ion-gear-a"></i>Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Lightbox Area -->
+    <div id="lightbox-container" class="lightbox-off">
+        <div id="lightbox-stage">
+            <img id="lightbox-image" src="#" />
+        </div>
+    </div>
+    <!-- Main Content -->
+    <main>
+        <div class="content-wrapper">
+            <div class="col-left">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="bg-img">
+                        <img src="img/profile-card-bg-2.png" alt="" />
+                    </div>
+                    <div class="profile-avatar">
+                        <a href="#"><img src="img/profile-card-avatar.png" alt="" /></a>
+                    </div>
+                    <div class="username-bio">
+                        <h4 class="username">Shane Duncan</h4>
+                        <p class="bio">Design. Coding. Outdoors</p>
+                    </div>
+                    <ul class="profile-meta">
+                        <li>
+                            123
+                            <br>
+                            <span>Posts</span>
+                        </li>
+                        <li>
+                            432
+                            <br>
+                            <span>Followers</span>
+                        </li>
+                        <li>
+                            324
+                            <br>
+                            <span>Following</span>
+                        </li>
+                    </ul>
+                    <a href="#" id="status-btn" class="follow-btn">Follow</a>
+                </div>
+                <!-- Image Gallery -->
+                <div class="gallery">
+                    <ul class="lightbox-set">
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/nemo/600/600/1"><img src="http://lorempicsum.com/nemo/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/futurama/600/600/1"><img src="http://lorempicsum.com/futurama/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/simpsons/600/600/1"><img src="http://lorempicsum.com/simpsons/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/nemo/600/600/1"><img src="http://lorempicsum.com/nemo/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/rio/600/600/1"><img src="http://lorempicsum.com/rio/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/simpsons/600/600/1"><img src="http://lorempicsum.com/simpsons/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/up/600/600/1"><img src="http://lorempicsum.com/up/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/simpsons/600/600/1"><img src="http://lorempicsum.com/simpsons/60/60/1" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lightbox-link" data-src="http://lorempicsum.com/nemo/600/600/1"><img src="http://lorempicsum.com/nemo/60/60/1" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sitemap -->
+                <div class="sitemap">
+                    <ul>
+                        <li>&copy; 2016 MyFriends Inc.</li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-middle">
+                <!-- Create Post -->
+                <div class="create-post">
+                    <div class="writepost">
+                        <textarea id="text-area" placeholder="Post something..."></textarea>
+                    </div>
+                    <div class="post-btn">
+                        <a><i class="ion-paper-airplane"></i></a>
+                    </div>
+                </div>
+                <!-- News Feed -->
+                <ul id="newsfeed">
+                    <!-- 1st Post -->
+                    <li class="post">
+                        <div class="post-meta">
+                            <div class="post-avatar">
+                                <img src="img/second-post-avatar.png" alt="" />
+                            </div>
+                            <div class="post-info">
+                                <h4 class="post-creator">John Smith</h4>
+                                <div class="time-place">
+                                    <span class="time"><i class="ion-android-alarm-clock"></i> 2 hr.</span>
+                                    <span class="dot"></span>
+                                    <span class="location"><i class="ion-ios-location"></i>Philadelphia, Pa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-content">
+                            <p>What a crazy ending, best game ever!! #MarchMadness #CongratsNOVA #THWND</p>
+                            <video controls>
+                                <source src="video/basketball.mp4" type="video/mp4"> Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </li>
+                    <!-- 2nd Post -->
+                    <li class="post">
+                        <div class="post-meta">
+                            <div class="post-avatar">
+                                <img src="img/post-avatar.png" alt="" />
+                            </div>
+                            <div class="post-info">
+                                <h4 class="post-creator">Marvin Bower</h4>
+                                <div class="time-place">
+                                    <span class="time"><i class="ion-android-alarm-clock"></i> 10 min.</span>
+                                    <span class="dot"></span>
+                                    <span class="location"><i class="ion-ios-location"></i>Philadelphia, Pa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-content">
+                            <p>Hey everyone, look at this hilarious video!!!!</p>
+                            <video controls>
+                                <source src="video/funny-video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </li>
+                    <!-- Hidden Post we use to clone with JQuery -->
+                    <li class="post post-hidden">
+                        <div class="post-meta">
+                            <div class="post-avatar">
+                                <img src="img/loggedin-post-avatar.png" alt="" />
+                            </div>
+                            <div class="post-info">
+                                <h4 class="post-creator">Shane Duncan</h4>
+                                <div class="time-place">
+                                    <span class="time"><i class="ion-android-alarm-clock"></i> Just Now</span>
+                                    <span class="dot"></span>
+                                    <span class="location"><i class="ion-ios-location"></i>Philadelphia, Pa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-content">
+                            <p>This weather is so messed Up! Why can't it be summer already?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-right">
+                <div class="ad">
+                    <!-- <img src="http://placehold.it/162x372"> -->
+                    <img id="ad" src="http://lorempicsum.com/simpsons/162/372/1" />
+                </div>
+                <a id="hide-ad-btn" href="#">Hide Ads</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
